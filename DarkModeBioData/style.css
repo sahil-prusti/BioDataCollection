@@ -1,0 +1,55 @@
+/* STYLE.CSS File for EXTERNAL CSS */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    font-size: 1.5em;
+    text-align: center;
+    color: #000;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px 0px;
+}
+
+.grid-item-pic {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item-data {
+    grid-column-start: 3;
+    grid-column-end: 12;
+    color: #000;
+}
+
+.tablehead {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: #000 solid 1px;
+    text-align: left;
+    column-span: all;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid rgb(116, 67, 3);
+    border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+    .grid-item-pic {
+        grid-column-start: 1;
+        grid-column-end: 12;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
